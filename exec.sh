@@ -1,6 +1,9 @@
 #!/bin/bash
 
-bashrc_path=`echo $(dirname $0)`
+bashrc_path="$HOME/bashrc"
+
+version_local=`cat $bashrc_path/version`
+version_github=`curl --silent https://raw.githubusercontent.com/dr4g0nsr/bashrc/main/version`
 
 [[ $version_github != $version_local ]] && [[ -f $bashrc_path/update.sh ]] &&  . $bashrc_path/update.sh && exit 0
 

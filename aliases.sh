@@ -18,3 +18,4 @@ alias dcc="curl -L https://github.com/docker/compose/releases/download/v2.16.0/d
 alias dcp="docker system prune -a"
 
 # others
+alias enable_ipv6='sed -i "/net.ipv6.conf.all.disable_ipv6.*/d" /etc/sysctl.conf && sysctl -q -p && echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6 && sed -i "s/#//" /etc/netplan/01-netcfg.yaml && netplan generate && netplan apply'

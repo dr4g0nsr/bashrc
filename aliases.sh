@@ -7,6 +7,7 @@ alias l='ls -CF'
 
 # git
 alias git-save-credentials='git config credential.helper store'
+alias git-exec="git update-index --chmod=+x $1"
 
 # docker
 alias dcd="docker-compose down"

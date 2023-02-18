@@ -1,0 +1,2 @@
+# bashrc
+Bash helper script

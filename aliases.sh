@@ -6,8 +6,10 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # git
-alias git-save-credentials='git config credential.helper store'
+alias git-save='git config credential.helper store'
 alias git-exec="git update-index --chmod=+x $1"
+alias git-reset="git reset --hard"
+alias git-reset-all="git reset --hard"
 
 # docker
 alias dcd="docker-compose down"

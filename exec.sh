@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version_local=`cat version`
+version_local=`cat ~/bashrc/version`
 version_github=`curl --silent https://raw.githubusercontent.com/dr4g0nsr/bashrc/main/version`
 
 [[ $version_github != $version_local ]] && [[ -f update.sh ]] &&  . ./update.sh && exit 0

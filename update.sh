@@ -11,7 +11,8 @@ echo "$version_local => $version_github"
 
 cd $bashrc_path/
 
+git reset --hard
 git pull > /dev/null 2>&1
-. ./update.sh
+. ./exec.sh
 
 cd ~

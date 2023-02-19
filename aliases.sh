@@ -23,5 +23,8 @@ alias ka="kubeadm $@"
 alias kc="kubectl $@"
 alias kinit="kubeadm init --pod-network-cidr=10.5.0.0/16 --apiserver-advertise-address=$@"
 
-# others
+# system
 alias enable_ipv6='sed -i "/net.ipv6.conf.all.disable_ipv6.*/d" /etc/sysctl.conf && sysctl -q -p && echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6 && sed -i "s/#//" /etc/netplan/01-netcfg.yaml && netplan generate && netplan apply'
+alias supass="echo $sudo_pass | sudo bash"
+
+# others

@@ -1,13 +1,14 @@
 #!/bin/bash
 
-# some more ls aliases
+# linux navigation aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias ff="find / -type f -exec grep -H '$@' {} \;"
 
 # git
 alias git-save='git config credential.helper store'
-alias git-exec="git update-index --chmod=+x $1"
+alias git-exec="git update-index --chmod=+x $@"
 alias git-reset="git reset --hard"
 alias git-reset-all="git reset --hard HEAD^"
 

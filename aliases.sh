@@ -36,5 +36,6 @@ alias enable_ipv6='sed -i "/net.ipv6.conf.all.disable_ipv6.*/d" /etc/sysctl.conf
 alias supass="echo $sudo_pass | sudo bash"
 alias netplan="cd /etc/netplan"
 alias sshpub="cat ~/.ssh/id_rsa.pub"
+alias auu="apt update && apt upgrade -y"
 
 # others

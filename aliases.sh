@@ -14,10 +14,21 @@ alias git-reset-all="git reset --hard HEAD^"
 
 # docker
 alias dcd="docker-compose down"
-alias dcu="docker-compose up -d --no-recreate"
-alias dcc="curl -L https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 --output /tmp/docker-compose && chmod 777 /tmp/docker-compose && mv /tmp/docker-compose /usr/bin/"
+alias dcu="docker-compose up -d"
+alias dcc="curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 --output /tmp/docker-compose && chmod 777 /tmp/docker-compose && mv /tmp/docker-compose /usr/bin/"
 alias dcp="docker system prune -a"
 alias dps="docker ps -a"
+alias deb="docker exec -it $1 /bin/bash"
+alias des="docker exec -it $1 /bin/sh"
+alias dt="\
+(command -v dry >/dev/null 2>&1 && dry) \
+|| (command -v dockly >/dev/null 2>&1 && dockly) \
+|| (command -v docui >/dev/null 2>&1 && docui) \
+|| (command -v dive >/dev/null 2>&1 && dive) \
+|| (command -v ctop >/dev/null 2>&1 && ctop) \
+|| (command -v sen >/dev/null 2>&1 && sen) \
+|| (command -v lazydocker >/dev/null 2>&1 && lazydocker) \
+|| echo 'No app found, try to install dockly, dry, docui, dive, ctop, sen, lazydocker'"
 
 # K8S
 alias ka="kubeadm $@"
@@ -39,3 +50,4 @@ alias sshpub="cat ~/.ssh/id_rsa.pub"
 alias auu="apt update && apt upgrade -y"
 
 # others
+

@@ -1,6 +1,6 @@
 # bashrc
 
-Bash helper script
+Bash helper script v1.1
 
 # setup
 

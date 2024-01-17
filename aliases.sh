@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # linux navigation aliases
-alias ll='ls -alF'
+alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
 alias ff="find / -type f -exec grep -H '$@' {} \;"
@@ -16,7 +16,7 @@ alias git-reset-all="git reset --hard HEAD^"
 alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
 alias dcc="curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-linux-x86_64 --output /tmp/docker-compose && chmod 777 /tmp/docker-compose && mv /tmp/docker-compose /usr/bin/"
-alias dcp="docker system prune -a"
+alias dsp="docker system prune -a"
 alias dps="docker ps -a"
 alias deb="docker exec -it $1 /bin/bash"
 alias des="docker exec -it $1 /bin/sh"
@@ -50,4 +50,3 @@ alias sshpub="cat ~/.ssh/id_rsa.pub"
 alias auu="apt update && apt upgrade -y"
 
 # others
-

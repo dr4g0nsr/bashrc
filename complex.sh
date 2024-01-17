@@ -501,8 +501,8 @@ export GIT_PS1_SHOWCOLORHINTS=true # Option for git-prompt.sh to show branch nam
 
 # Terminal Prompt:
 # Include git branch, use PROMPT_COMMAND (not PS1) to get color output (see git-prompt.sh for more)
-#export PROMPT_COMMAND='__git_ps1 "\w\n" "[${USER}][$(hostname -s)]# "'
+export PROMPT_COMMAND='__git_ps1 "\w\n" "[${USER}][$(hostname -s)]# "'
 #export PROMPT_COMMAND='echo -ne "\033]0;${USER}@$(hostname -s)# "; echo -ne "\007"'
 #export PROMPT_COMMAND='PS1="\[$LIGHT_GREEN\u:\h$COLOR_NONE:$BLUE\w$COLOR_NONE\] $(prompt_status) \$(__git_ps1) \[$YELLOW\n\$$COLOR_NONE\] "; echo -ne "\033]0;${USER}@$(hostname -s)# "; echo -ne "\007"'
 #export PROMPT_COMMAND='PS1="\[$LIGHT_GREEN\u:\h $GREEN>$LIGHT_RED>$LIGHT_GRAY> $COLOR_NONE$LIGHT_GREEN\w$COLOR_NONE\] $(prompt_status) \$(__git_ps1) \[$YELLOW\n\$$COLOR_NONE\] "; echo -ne "\033]0;${USER}@$(hostname -s)# "; echo -ne "\007"'
-export PROMPT_COMMAND='PS1="\${USER}@\$(hostname -s) \$(__git_ps1)\n>"'
+#export PROMPT_COMMAND='PS1="\${USER}@\$(hostname -s) \$(__git_ps1)\n>"'
